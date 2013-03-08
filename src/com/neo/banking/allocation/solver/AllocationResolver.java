@@ -15,7 +15,7 @@ public class AllocationResolver {
         int total = 0;
         int ok = 0;
 
-        List<Exec> execs = Generator.generateExecs(25, 100, 900, 600, 900);
+        List<Exec> execs = Generator.generateExecs(25, 100, 900, 660, 680);
         int qty = Exec.totalQuantity(execs);
         System.out.println("Total " + qty + ", Avg Price " + Exec.avgPrice(execs));
 
