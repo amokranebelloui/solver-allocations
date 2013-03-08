@@ -1,0 +1,82 @@
+/*
+        IntVar alloc1w = new IntVar(store, "alloc1w", com.neo.banking.allocation.solver.ValueHelper.qty(alloc1Weight));
+        IntVar alloc1totalQty = new IntVar(store, "alloc1totalQty", 0, max);
+        IntVar alloc1totalQty100 = new IntVar(store, "alloc1totalQty100", 0, supermax);
+
+        IntVar alloc2w = new IntVar(store, "alloc2w", com.neo.banking.allocation.solver.ValueHelper.qty(alloc2Weight));
+        IntVar alloc2totalQty = new IntVar(store, "alloc2totalQty", 0, max);
+        IntVar alloc2totalQty100 = new IntVar(store, "alloc2totalQty100", 0, supermax);
+          */
+
+
+        /*
+        IntVar e1qty = new IntVar(store, "e1qty", qty(400));
+        IntVar e1px = new IntVar(store, "e1px", px(38));
+        IntVar e1total = new IntVar(store, "e1total", total(400, 38));
+
+        IntVar e2qty = new IntVar(store, "e2qty", qty(200));
+        IntVar e2px = new IntVar(store, "e2px", px(34));
+        IntVar e2total = new IntVar(store, "e2total", total(200, 34));
+
+        IntVar e3qty = new IntVar(store, "e3qty", qty(150));
+        IntVar e3px = new IntVar(store, "e3px", px(37));
+        IntVar e3total = new IntVar(store, "e3total", total(150, 37));
+        */
+
+        //IntVar e1a1qty = new IntVar(store, "qty", 0, max);
+        //IntVar e1a1total = new IntVar(store, "totalPx", 0, supermax);
+        //IntVar e1a2qty = new IntVar(store, "e1a2qty", 0, max);
+        //IntVar e1a2total = new IntVar(store, "e1a2total", 0, supermax);
+        //IntVar e2a1qty = new IntVar(store, "e2a1qty", 0, max);
+        //IntVar e2a1total = new IntVar(store, "e2a1total", 0, supermax);
+        //IntVar e2a2qty = new IntVar(store, "e2a2qty", 0, max);
+        //IntVar e2a2total = new IntVar(store, "e2a2total", 0, supermax);
+        //IntVar e3a1qty = new IntVar(store, "e3a1qty", 0, max);
+        //IntVar e3a1total = new IntVar(store, "e3a1total", 0, supermax);
+        //IntVar e3a2qty = new IntVar(store, "e3a2qty", 0, max);
+        //IntVar e3a2total = new IntVar(store, "e3a2total", 0, supermax);
+
+
+
+/*
+        store.impose(new XmulYeqZ(a11.getQty(),  e1.getPx(), a11.getTotalPx()));
+        store.impose(new XmulYeqZ(a12.getQty(),  e1.getPx(), a12.getTotalPx()));
+        store.impose(new XmulYeqZ(a21.getQty(),  e2.getPx(), a21.getTotalPx()));
+        store.impose(new XmulYeqZ(a22.getQty(),  e2.getPx(), a22.getTotalPx()));
+        store.impose(new XmulYeqZ(a31.getQty(),  e3.getPx(), a31.getTotalPx()));
+        store.impose(new XmulYeqZ(a32.getQty(),  e3.getPx(), a32.getTotalPx()));
+        */
+        //store.impose(new XmulCeqZ(s1.getTotalQty(), 100, s1.getTotalQty100()));
+        //store.impose(new XmulCeqZ(s2.getTotalQty(), 100, s2.getTotalQty100()));
+        //        store.impose(new XdivYeqZ(s1.getTotalQty100(), s1.getWeight(), qty));
+//        store.impose(new XdivYeqZ(s2.getTotalQty100(), s2.getWeight(), qty));
+
+        //store.impose(new XmulCeqZ(s1.getWeight(), 750, s1.getTotalQty100()));
+        //store.impose(new XmulCeqZ(s2.getWeight(), 750, s2.getTotalQty100()));
+
+        // Exec Alloc
+        /*
+        IntVar[] exec1allocsQty = {a11.getQty(), a12.getQty()};
+        IntVar[] exec2allocsQty = {a21.getQty(), a22.getQty()};
+        IntVar[] exec3allocsQty = {a31.getQty(), a32.getQty()};
+        store.impose(new Sum(exec1allocsQty, e1.getQty()));
+        store.impose(new Sum(exec2allocsQty, e2.getQty()));
+        store.impose(new Sum(exec3allocsQty, e3.getQty()));
+
+        IntVar[] exec1totals = {a11.getTotalPx(), a12.getTotalPx()};
+        IntVar[] exec2totals = {a21.getTotalPx(), a22.getTotalPx()};
+        IntVar[] exec3totals = {a31.getTotalPx(), a32.getTotalPx()};
+        store.impose(new Sum(exec1totals, e1.getTotal()));
+        store.impose(new Sum(exec2totals, e2.getTotal()));
+        store.impose(new Sum(exec3totals, e3.getTotal()));
+        */
+
+
+
+        // Split Alloc
+                /*
+                IntVar[] alloc1execs = {a11.getQty(), a21.getQty(), a31.getQty()};
+                IntVar[] alloc2execs = {a12.getQty(), a22.getQty(), a32.getQty()};
+                store.impose(new Sum(alloc1execs, s1.getTotalQty()));
+                store.impose(new Sum(alloc2execs, s2.getTotalQty()));
+                */
