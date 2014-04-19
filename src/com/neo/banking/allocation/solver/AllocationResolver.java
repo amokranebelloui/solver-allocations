@@ -15,11 +15,11 @@ public class AllocationResolver {
         int total = 0;
         int ok = 0;
 
-        List<Exec> execs = Generator.generateExecs(25, 100, 900, 660, 680);
+        List<Exec> execs = Generator.generateExecs(3, 100, 900, 660, 680);
         int qty = Exec.totalQuantity(execs);
         System.out.println("Total " + qty + ", Avg Price " + Exec.avgPrice(execs));
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 4; i++) {
             List<Split> splits = Generator.generate3Split(qty);
 
             if (splits != null) {
